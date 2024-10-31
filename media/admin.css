@@ -1,0 +1,167 @@
+/*
+ * Photo Box: http://photoboxone.com/
+ */
+
+.clearfix:before,
+.clearfix:after{
+	display: block;
+	content: '';
+	clear: both;
+	height: 0;
+	overflow: hidden
+}
+
+.photobox_settings{
+	display: flex;
+	justify-content: space-between;
+}
+.photobox_advanced {
+	width: 100%;
+}
+.photobox_sidebar {
+	width: 360px;
+	max-width: 100%;
+	padding-left: 15px;
+}
+	.photobox_settings img{
+		max-width: 100%;
+		height: auto;
+	}
+	.photobox_settings em,
+	.photobox_settings i{
+		font-style: italic;
+	}
+	.photobox_settings strong,
+	.photobox_settings b{
+		font-weight: bold;
+	}
+	.photobox_advanced label{
+		display: inline-block;
+		min-width: 200px;
+		max-width: 100%;
+		vertical-align: middle;
+		line-height: 32px;
+	}
+	.photobox_advanced .inputbox{
+		display: inline-block;
+		width: 280px;
+		max-width: 100%;
+	}
+	.photobox_settings .col-md-6{
+		float: left;
+		width: 50%;
+		padding: 0 10px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.photobox_tabmenu {
+		padding: 0 0 0 10px;
+	}
+		.photobox_tabmenu ul{
+			margin: 0;
+			padding: 0;
+		}
+			.photobox_tabmenu li{
+				display: inline-block;
+				cursor: pointer;
+				border: 1px solid #999;
+				margin-bottom: -1px;
+				background: #e5e5e5;
+				color: #555;
+				font-weight: bold;
+			}
+			.photobox_tabmenu li:hover{
+				background: #fff;
+				color: #444;
+			}
+			.photobox_tabmenu li.active{
+				border-bottom: 1px solid #f1f1f1;
+				background: #f1f1f1;
+				color: #000;
+			}
+			.photobox_tabmenu li a{
+			color: #000;
+			text-decoration: none;
+			outline: none;
+			padding: 5px 10px;
+			display: block;
+		}
+	.photobox_tabitems {
+		border: 1px solid #999;
+		padding: 10px;
+	}
+	.photobox_tabitem {
+		display: none;
+	}
+	.photobox_tabitem.active {
+		display: block;
+	}
+
+.photobox_links{
+	padding-bottom: 10px;
+	min-height: 10px;
+	height: 10px;
+	height: auto !important;	
+}
+	.photobox_links li{
+		display:block;
+		float:left;
+		padding-right: 15px;
+		line-height: 20px
+	}
+		.photobox_links li img{
+			vertical-align: middle;
+		}
+		.photobox_links li strong{
+			font-weight: normal;
+		}
+		.photobox_links li em{
+			font-style: none;
+		}
+	.photobox-icon-click {
+		position: relative;
+		animation: photobox_left 1s ease-in-out infinite;
+		display: inline-block;
+		width: 30px;
+	}
+	.photobox-icon-click .dashicons-arrow-right-alt:before {
+		color: #f00;
+	}
+
+	.photobox_sidebar_box {
+		background: #fff;
+		margin-bottom: 10px;
+		border: 1px solid #ddd;
+		padding: 10px;
+	}
+	.photobox_sidebar_box h4{
+		margin-top: 0;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.photobox_settings_footer .photobox_sidebar_box {
+		width: 45%;
+	}
+
+@media screen and ( max-width: 766px )
+{
+	.photobox_settings_footer .photobox_sidebar_box ,
+	.photobox_settings .col-md-6{
+		float: none;
+		width: auto;
+	}
+	.photobox_sidebar,
+	.photobox_advanced,
+	.photobox_settings{
+		display: block;
+	}	
+}
+
+@-webkit-keyframes photobox_left {
+	0%   { left: 0; }
+	100% { left: 10px; }
+}
+@keyframes photobox_left {
+	0%   { left: 0; }
+	100% { left: 10px; }
+}

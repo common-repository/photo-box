@@ -1,0 +1,73 @@
+/*
+ * Photo Box
+ * Author: http://photoboxone.com/
+ */
+
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}
+
+.gallery-photos-box .gallery-row{ padding: 0 0 15px }
+.gallery-photos-box .gallery-image{ float:left; width: 200px; padding-right: 10px; box-sizing: border-box; overflow: hidden; text-align: center;  }
+.gallery-photos-box .gallery-image img{ max-width: 100%; opacity:0.8; transition: opacity .5s; -webkit-transition: opacity .5s; }
+.gallery-photos-box .gallery-image a:hover img{ opacity:1;  }
+.gallery-photos-box .gallery-image span.image_title{ display: block; padding-top: 10px; }
+
+.gallery-photos-box.gallery-columns-1 .gallery-image{ float:none; width: 100%; padding-right: 0 }
+.gallery-photos-box.gallery-columns-2 .gallery-image{ width: 48%; padding-right: 2%}
+.gallery-photos-box.gallery-columns-3 .gallery-image{ width: 32%; padding-right: 2%}
+.gallery-photos-box.gallery-columns-4 .gallery-image{ width: 24%; padding-right: 1%}
+.gallery-photos-box.gallery-columns-5 .gallery-image{ width: 18%; padding-right: 2%}
+.gallery-photos-box.gallery-columns-6 .gallery-image{ width: 12%; padding-right: 1%}
+
+.gallery-photos-box.gallery-columns-6 .gallery-image-6,
+.gallery-photos-box.gallery-columns-5 .gallery-image-5,
+.gallery-photos-box.gallery-columns-4 .gallery-image-4,
+.gallery-photos-box.gallery-columns-3 .gallery-image-3,
+.gallery-photos-box.gallery-columns-3 .gallery-image-3,
+.gallery-photos-box.gallery-columns-2 .gallery-image-2{ padding-right: 0}
+
+.photos-box-hide,
+.photos-box-tags{
+	display: none !important;
+}
+
+.anime{
+	display: block;
+}
+.anime.hide{
+	display: none !important;
+}
+
+.pbone_animated.active {
+  -webkit-animation-iteration-count: inherit;
+  animation-iteration-count: inherit;
+}
+
+.pbone_animated.actived {
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+
+.pbone_animated.hovered,
+.pbone_animated:hover,
+.pbone_animated.hover {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.pbone_animated.fly {
+	left: 0;
+	opacity: 0;
+	-webkit-animation-duration: 1000s;
+	animation-duration: 1000s;
+}
+.pbone_animated.downing {
+	top: 999px;
+}
+.pbone_animated.uping {
+	top: -999px;
+}
